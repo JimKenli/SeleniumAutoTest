@@ -66,7 +66,7 @@ public class login extends baseDriver {
 		System.out.println(userInfo);
 		if (userInfo.equals("lizhq")){
 			System.out.println("登陆成功");
-			this.takeScreenShot();
+			//this.takeScreenShot();
 		}
 		else{
 			System.out.println("登录失败");
@@ -108,24 +108,7 @@ public class login extends baseDriver {
 		return eles;
 	} 
 	
-	/**
-	 *截图
-	 **/
-	public void takeScreenShot(){
-		long date = System.currentTimeMillis();
-		String path = String.valueOf(date);
-		String curPath = System.getProperty("user.dir");
-		path = path + ".png";
-		String screenPath = curPath +"/"+ path;
-		System.out.println(screenPath);
-		File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(screen, new File(screenPath));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+
 	
 /*	public static void main(String[] args) throws Exception{
 		login login = new login();
