@@ -12,7 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class baseDriver {
     WebDriver driver;
 	public baseDriver(){
-		System.setProperty("webdriver.chrome.driver", "D:\\AutoTest\\chromedriver_win32\\chromedriver.exe");
+		//公司台式电脑的chromedriver.exe路径
+		System.setProperty("webdriver.chrome.driver", "E:\\autotest\\chromedriver\\chromedriver.exe");
+		//笔记本的chromedriver.exe路径
+		//System.setProperty("webdriver.chrome.driver", "D:\\AutoTest\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	
