@@ -1,6 +1,10 @@
 package com.lzq.selenium.imoocTest.base;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
 
 public class DriverBase {
 	public WebDriver driver;
@@ -13,5 +17,15 @@ public class DriverBase {
 		System.out.println("stop webdriver");
 		driver.close();
 	}
+	
+	/**
+	 * 封装Element
+	 * @param By by
+	 * */
+	public WebElement findElement(By by){
+		WebElement element = driver.findElement(by);
+		return element;
+	}
+	
 
 }
