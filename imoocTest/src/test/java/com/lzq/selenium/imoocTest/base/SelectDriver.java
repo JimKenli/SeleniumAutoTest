@@ -12,9 +12,9 @@ public class SelectDriver {
 			return driver;
 		}else{
 			//公司台式电脑的chromedriver.exe路径
-			System.setProperty("webdriver.chrome.driver", "E:\\autotest\\chromedriver\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "E:\\autotest\\chromedriver\\chromedriver.exe");
 			//笔记本的chromedriver.exe路径
-			//System.setProperty("webdriver.chrome.driver", "D:\\AutoTest\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\AutoTest\\chromedriver_win32\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			return driver;
 		}

@@ -13,6 +13,7 @@ public class BasePage {
 	}
 	
 	/**
+	 * 
 	 * 封装Element
 	 * @param By by
 	 * */

@@ -1,7 +1,9 @@
-package com.lzq.selenium.imoocTest;
+package com.lzq.selenium.imoocTest.util;
 
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+
+import com.lzq.selenium.imoocTest.baseDriver;
 
 public class TestngListenerScreenShot extends TestListenerAdapter {
 	  @Override

@@ -1,4 +1,4 @@
-package com.lzq.selenium.imoocTest;
+package com.lzq.selenium.imoocTest.util;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

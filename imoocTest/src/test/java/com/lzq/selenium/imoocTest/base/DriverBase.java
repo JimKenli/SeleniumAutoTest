@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-
+ 
 public class DriverBase {
 	public WebDriver driver;
 	public DriverBase(String browser){
@@ -26,6 +26,11 @@ public class DriverBase {
 		WebElement element = driver.findElement(by);
 		return element;
 	}
-	
+	/*
+	 * get封装
+	 */
+	public void get(String url){
+		driver.get(url);
+	}
 
 }
