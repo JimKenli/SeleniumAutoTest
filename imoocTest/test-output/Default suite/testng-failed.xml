@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lzq.selenium.imoocTest.login">
+      <class name="com.lzq.selenium.imoocTest.testCase.testCourseList">
         <methods>
-          <include name="initDriver"/>
-          <include name="loginScript"/>
+          <include name="CourseList"/>
         </methods>
-      </class> <!-- com.lzq.selenium.imoocTest.login -->
+      </class> <!-- com.lzq.selenium.imoocTest.testCase.testCourseList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

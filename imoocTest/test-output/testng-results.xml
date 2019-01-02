@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18470" started-at="2018-12-24T14:29:37Z" finished-at="2018-12-24T14:29:55Z">
+  <suite name="Default suite" duration-ms="169268" started-at="2019-01-02T16:03:24Z" finished-at="2019-01-02T16:06:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18470" started-at="2018-12-24T14:29:37Z" finished-at="2018-12-24T14:29:55Z">
-      <class name="com.lzq.selenium.imoocTest.testCase.Login">
-        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@13444fe]" name="getLoginHome" duration-ms="17633" started-at="2018-12-24T22:29:37Z" finished-at="2018-12-24T22:29:54Z">
+    <test name="Default test" duration-ms="169268" started-at="2019-01-02T16:03:24Z" finished-at="2019-01-02T16:06:13Z">
+      <class name="com.lzq.selenium.imoocTest.testCase.testCourseList">
+        <test-method status="PASS" signature="CourseList()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.testCourseList@57f43]" name="CourseList" duration-ms="169249" started-at="2019-01-03T00:03:24Z" finished-at="2019-01-03T00:06:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLoginHome -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@13444fe]" name="testLogin" duration-ms="771" started-at="2018-12-24T22:29:55Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.getLoginHome" finished-at="2018-12-24T22:29:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
+        </test-method> <!-- CourseList -->
+      </class> <!-- com.lzq.selenium.imoocTest.testCase.testCourseList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

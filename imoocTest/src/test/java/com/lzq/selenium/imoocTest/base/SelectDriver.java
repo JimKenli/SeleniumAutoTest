@@ -9,6 +9,7 @@ public class SelectDriver {
 		if(browser.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.firefox.bin","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" );
 			WebDriver driver = new FirefoxDriver();
+			driver.manage().window().maximize();
 			return driver;
 		}else{
 			//公司台式电脑的chromedriver.exe路径
@@ -16,6 +17,7 @@ public class SelectDriver {
 			//笔记本的chromedriver.exe路径
 			System.setProperty("webdriver.chrome.driver", "D:\\AutoTest\\chromedriver_win32\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
+			driver.manage().window().maximize();
 			return driver;
 		}
 		
