@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="169268" started-at="2019-01-02T16:03:24Z" finished-at="2019-01-02T16:06:13Z">
+  <suite name="Default suite" duration-ms="30181" started-at="2019-01-06T10:20:22Z" finished-at="2019-01-06T10:20:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="169268" started-at="2019-01-02T16:03:24Z" finished-at="2019-01-02T16:06:13Z">
-      <class name="com.lzq.selenium.imoocTest.testCase.testCourseList">
-        <test-method status="PASS" signature="CourseList()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.testCourseList@57f43]" name="CourseList" duration-ms="169249" started-at="2019-01-03T00:03:24Z" finished-at="2019-01-03T00:06:13Z">
+    <test name="Default test" duration-ms="30181" started-at="2019-01-06T10:20:22Z" finished-at="2019-01-06T10:20:53Z">
+      <class name="com.lzq.selenium.imoocTest.testCase.Login">
+        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@57f43]" name="getLoginHome" duration-ms="16399" started-at="2019-01-06T18:20:23Z" finished-at="2019-01-06T18:20:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CourseList -->
-      </class> <!-- com.lzq.selenium.imoocTest.testCase.testCourseList -->
+        </test-method> <!-- getLoginHome -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@57f43]" name="testLogin" duration-ms="10477" started-at="2019-01-06T18:20:39Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.getLoginHome" finished-at="2019-01-06T18:20:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="TestAddCart()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@57f43]" name="TestAddCart" duration-ms="3227" started-at="2019-01-06T18:20:49Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testLogin" finished-at="2019-01-06T18:20:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAddCart -->
+      </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

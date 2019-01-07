@@ -47,5 +47,12 @@ public class DriverBase {
 	public void executeScript(String s, WebElement el){
 		((JavascriptExecutor) driver).executeScript(s, el);
 	}
+	
+	 /**
+     * 点击
+     * */
+    public void click(WebElement element){
+    	element.click();
+    }
 
 }
