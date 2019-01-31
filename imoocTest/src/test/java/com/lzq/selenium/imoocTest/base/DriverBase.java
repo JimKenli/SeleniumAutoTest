@@ -54,5 +54,17 @@ public class DriverBase {
     public void click(WebElement element){
     	element.click();
     }
+    /*
+     * 切换alert窗口
+     */
+    public void switchToAlert(){
+    	driver.switchTo().alert();
+    }
+    /*
+     * 切换模态窗口
+     */
+    public void switchToMode(){
+    	driver.switchTo().activeElement();
+    }
 
 }

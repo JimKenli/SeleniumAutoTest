@@ -7,7 +7,7 @@
         <methods>
           <include name="getLoginHome"/>
           <include name="testLogin"/>
-          <include name="downOrder"/>
+          <include name="TestAddCart"/>
         </methods>
       </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
     </classes>

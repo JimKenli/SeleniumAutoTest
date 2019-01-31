@@ -41,6 +41,12 @@ public class CoursePage extends BasePage{
 	public WebElement getCourseNameElement() throws Exception{
 		return nodeElement(getByLocator.getLocator("courseInfo"),getByLocator.getLocator("courseInfoText"));
 	}
+	/*
+	 * 通过子父节点定位已购买弹窗确定按钮
+	 */
+	public WebElement getReadyBuy() throws Exception{
+		return nodeElement(getByLocator.getLocator("readyBuySure"), getByLocator.getLocator("readyBuySureNode"));
+	}
 	
 
 }

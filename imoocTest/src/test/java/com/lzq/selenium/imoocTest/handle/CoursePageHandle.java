@@ -41,5 +41,11 @@ public class CoursePageHandle {
 	public String getCourseName() throws Exception{
 		return coursePage.getText(coursePage.getCourseNameElement());
 	}
+	/*
+	 * 点击已经购买弹窗的确定按钮
+	 */
+	public void clickReadyBuy() throws Exception{
+		coursePage.click(coursePage.getReadyBuy());
+	}
 
 }

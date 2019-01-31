@@ -25,6 +25,16 @@ public class CoursePagePro {
 			beforeNum = 0;
 		}
 		coursePageHandle.clickAddCart();
+		Thread.sleep(3000);
+
+		try{
+			driver.switchToMode();
+			coursePageHandle.clickReadyBuy();
+		}catch(Exception e){
+			System.out.println("没有重复添加购物车的情况，继续");
+		}
+
+		
 		afterCourseNum = coursePageHandle.getShopCartNum();
 		try{
 			afterNum = Integer.valueOf(afterCourseNum);
@@ -36,6 +46,7 @@ public class CoursePagePro {
 		Thread.sleep(3000);
 		if (afterNum == beforeNum + 1){
 			System.out.println("添加购物车成功");
+			coursePageHandle.clickShopCart();
 		}else{
 			System.out.println("添加购物车失败");
 		}

@@ -19,6 +19,7 @@ public class getByLocator {
 		}else if(locatorType.equals("linkText")){
 			return By.linkText(locatorValue);
 		}else if(locatorType.equals("tagName")){
+			System.out.println("值:"+locatorValue);
 			return By.tagName(locatorValue);
 		}else{
 			return By.xpath(locatorValue);
