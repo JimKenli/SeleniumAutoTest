@@ -9,17 +9,23 @@ import org.testng.annotations.Test;
 import com.lzq.selenium.imoocTest.base.DriverBase;
 import com.lzq.selenium.imoocTest.business.CoursePagePro;
 import com.lzq.selenium.imoocTest.business.LoginPro;
+import com.lzq.selenium.imoocTest.business.OrderPayPagePro;
+import com.lzq.selenium.imoocTest.business.SureOrderPagePro;
 import com.lzq.selenium.imoocTest.util.getByLocator;
 
 public class Login extends CaseBase{
 	public DriverBase driver;
 	public LoginPro loginpro;
 	public CoursePagePro cpp;
+	public SureOrderPagePro sopp;
+	public OrderPayPagePro oppp;
 	static Logger logger = Logger.getLogger(Login.class);
 	public Login(){
 		this.driver = initDriver("chrome");
 		loginpro = new LoginPro(driver);
 		cpp = new CoursePagePro(driver);
+		sopp = new SureOrderPagePro(driver);
+		oppp = new OrderPayPagePro(driver);
 	}
 	
 	@Test
@@ -45,11 +51,31 @@ public class Login extends CaseBase{
 	/*
 	 * 添加购物车
 	 */
+//	@Test(dependsOnMethods={"testLogin"})
+//	public void TestAddCart() throws Exception{
+//		cpp.addCart();
+//	}
+	/*
+	 * 立即购买
+	 */
 	@Test(dependsOnMethods={"testLogin"})
-	public void TestAddCart() throws Exception{
-		cpp.addCart();
+	public void testBuyNow() throws Exception{
+		cpp.buyNow();
 	}
-	
+	/*
+	 * 提交订单
+	 */
+	@Test(dependsOnMethods={"testBuyNow"})
+	public void testSureOrder() throws Exception{
+		sopp.sureOrder();
+	}
+	/*
+	 * 跳转支付页面
+	 */
+	@Test(dependsOnMethods={"testSureOrder"})
+	public void TestGoPay() throws Exception{
+		oppp.orderPayPro();
+	}
 	
 	
 	

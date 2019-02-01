@@ -29,7 +29,7 @@ public class CoursePagePro {
 
 		try{
 			driver.switchToMode();
-			coursePageHandle.clickReadyBuy();
+			coursePageHandle.clickAlreadyBuy();
 		}catch(Exception e){
 			System.out.println("没有重复添加购物车的情况，继续");
 		}
@@ -50,6 +50,13 @@ public class CoursePagePro {
 		}else{
 			System.out.println("添加购物车失败");
 		}
+	}
+	
+	/*
+	 * 立即购买
+	 */
+	public void buyNow() throws Exception{
+		coursePageHandle.clickBuyNow();
 	}
 
 }

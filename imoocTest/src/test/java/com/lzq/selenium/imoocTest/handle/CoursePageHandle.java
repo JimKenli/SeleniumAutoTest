@@ -44,8 +44,8 @@ public class CoursePageHandle {
 	/*
 	 * 点击已经购买弹窗的确定按钮
 	 */
-	public void clickReadyBuy() throws Exception{
-		coursePage.click(coursePage.getReadyBuy());
+	public void clickAlreadyBuy() throws Exception{
+		coursePage.click(coursePage.getAlreadyBuy());
 	}
 
 }

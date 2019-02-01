@@ -44,8 +44,8 @@ public class CoursePage extends BasePage{
 	/*
 	 * 通过子父节点定位已购买弹窗确定按钮
 	 */
-	public WebElement getReadyBuy() throws Exception{
-		return nodeElement(getByLocator.getLocator("readyBuySure"), getByLocator.getLocator("readyBuySureNode"));
+	public WebElement getAlreadyBuy() throws Exception{
+		return nodeElement(getByLocator.getLocator("alreadyBuySure"), getByLocator.getLocator("alreadyBuySureNode"));
 	}
 	
 
