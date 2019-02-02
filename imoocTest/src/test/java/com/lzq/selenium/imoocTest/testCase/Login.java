@@ -11,6 +11,7 @@ import com.lzq.selenium.imoocTest.business.CoursePagePro;
 import com.lzq.selenium.imoocTest.business.LoginPro;
 import com.lzq.selenium.imoocTest.business.OrderPayPagePro;
 import com.lzq.selenium.imoocTest.business.SureOrderPagePro;
+import com.lzq.selenium.imoocTest.util.SendEmail;
 import com.lzq.selenium.imoocTest.util.getByLocator;
 
 public class Login extends CaseBase{
@@ -68,6 +69,7 @@ public class Login extends CaseBase{
 	@Test(dependsOnMethods={"testBuyNow"})
 	public void testSureOrder() throws Exception{
 		sopp.sureOrder();
+		Thread.sleep(3000);
 	}
 	/*
 	 * 跳转支付页面
@@ -75,6 +77,7 @@ public class Login extends CaseBase{
 	@Test(dependsOnMethods={"testSureOrder"})
 	public void TestGoPay() throws Exception{
 		oppp.orderPayPro();
+		SendEmail.sendToEmail("跑完了");
 	}
 	
 	

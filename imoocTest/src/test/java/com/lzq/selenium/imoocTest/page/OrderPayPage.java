@@ -16,7 +16,7 @@ public class OrderPayPage extends BasePage{
 	 * 获取订单号
 	 */
 	public WebElement getOrderNumElement() throws Exception{
-		return element(getByLocator.getLocator("order"));
+		return element(getByLocator.getLocator("orderText"));
 	}
 	/*
 	 * 返回课程名称element

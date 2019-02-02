@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71007" started-at="2019-02-01T07:48:18Z" finished-at="2019-02-01T07:49:29Z">
+  <suite name="Default suite" duration-ms="135522" started-at="2019-02-02T07:02:07Z" finished-at="2019-02-02T07:04:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71007" started-at="2019-02-01T07:48:18Z" finished-at="2019-02-01T07:49:29Z">
+    <test name="Default test" duration-ms="135522" started-at="2019-02-02T07:02:07Z" finished-at="2019-02-02T07:04:22Z">
       <class name="com.lzq.selenium.imoocTest.testCase.Login">
-        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@909217e]" name="getLoginHome" duration-ms="32588" started-at="2019-02-01T15:48:18Z" finished-at="2019-02-01T15:48:51Z">
+        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@645aa696]" name="getLoginHome" duration-ms="63311" started-at="2019-02-02T15:02:07Z" finished-at="2019-02-02T15:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLoginHome -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@909217e]" name="testLogin" duration-ms="28696" started-at="2019-02-01T15:48:51Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.getLoginHome" finished-at="2019-02-01T15:49:19Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@645aa696]" name="testLogin" duration-ms="63950" started-at="2019-02-02T15:03:10Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.getLoginHome" finished-at="2019-02-02T15:04:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testBuyNow()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@909217e]" name="testBuyNow" duration-ms="9197" started-at="2019-02-01T15:49:19Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testLogin" finished-at="2019-02-01T15:49:28Z">
+        <test-method status="PASS" signature="testBuyNow()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@645aa696]" name="testBuyNow" duration-ms="2830" started-at="2019-02-02T15:04:14Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testLogin" finished-at="2019-02-02T15:04:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyNow -->
-        <test-method status="PASS" signature="testSureOrder()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@909217e]" name="testSureOrder" duration-ms="393" started-at="2019-02-01T15:49:29Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testBuyNow" finished-at="2019-02-01T15:49:29Z">
+        <test-method status="PASS" signature="testSureOrder()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@645aa696]" name="testSureOrder" duration-ms="3328" started-at="2019-02-02T15:04:17Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testBuyNow" finished-at="2019-02-02T15:04:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSureOrder -->
+        <test-method status="PASS" signature="TestGoPay()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@645aa696]" name="TestGoPay" duration-ms="2025" started-at="2019-02-02T15:04:20Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testSureOrder" finished-at="2019-02-02T15:04:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestGoPay -->
       </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
