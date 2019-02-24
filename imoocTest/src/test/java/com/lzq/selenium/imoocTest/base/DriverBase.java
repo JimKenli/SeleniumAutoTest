@@ -66,5 +66,12 @@ public class DriverBase {
     public void switchToMode(){
     	driver.switchTo().activeElement();
     }
+    
+    /**
+     * 关闭浏览器 
+     * */
+    public void close(){
+    	driver.close();
+    }
 
 }

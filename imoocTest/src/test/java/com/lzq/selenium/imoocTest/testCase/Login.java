@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.lzq.selenium.imoocTest.base.DriverBase;
@@ -21,7 +23,9 @@ public class Login extends CaseBase{
 	public SureOrderPagePro sopp;
 	public OrderPayPagePro oppp;
 	static Logger logger = Logger.getLogger(Login.class);
-	public Login(){
+	
+	@BeforeClass
+	public void LoginTest(){
 		this.driver = initDriver("chrome");
 		loginpro = new LoginPro(driver);
 		cpp = new CoursePagePro(driver);
@@ -77,10 +81,13 @@ public class Login extends CaseBase{
 	@Test(dependsOnMethods={"testSureOrder"})
 	public void TestGoPay() throws Exception{
 		oppp.orderPayPro();
-		SendEmail.sendToEmail("跑完了");
+		//SendEmail.sendToEmail("跑完了");
 	}
 	
-	
+	@AfterClass
+	public void closed(){
+		driver.close();
+	}
 	
 	
 	

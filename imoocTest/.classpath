@@ -22,12 +22,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/saxon-8.7.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/SaxonLiaison.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/activation.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/mail.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="E:/autotest/Workspaces/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/activation.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/commons-email-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="D:/AutoTest/GitHub/SeleniumAutoTest/imoocTest/lib/SaxonLiaison.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
