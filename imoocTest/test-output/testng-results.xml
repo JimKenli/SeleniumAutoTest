@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72249" started-at="2019-02-24T15:23:19Z" finished-at="2019-02-24T15:24:31Z">
+  <suite name="Default suite" duration-ms="33566" started-at="2019-03-02T09:10:54Z" finished-at="2019-03-02T09:11:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72249" started-at="2019-02-24T15:23:19Z" finished-at="2019-02-24T15:24:31Z">
-      <class name="com.lzq.selenium.imoocTest.testCase.Login">
-        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="LoginTest" is-config="true" duration-ms="4335" started-at="2019-02-24T23:23:19Z" finished-at="2019-02-24T23:23:24Z">
+    <test name="Default test" duration-ms="33566" started-at="2019-03-02T09:10:54Z" finished-at="2019-03-02T09:11:28Z">
+      <class name="com.lzq.selenium.imoocTest.testCase.SuiteTestBuy">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.SuiteTestBuy@d62f43]" name="beforeClass" is-config="true" duration-ms="33285" started-at="2019-03-02T17:10:54Z" finished-at="2019-03-02T17:11:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="getLoginHome" duration-ms="28407" started-at="2019-02-24T23:23:24Z" finished-at="2019-02-24T23:23:52Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testBuy()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.SuiteTestBuy@d62f43]" name="testBuy" duration-ms="258" started-at="2019-03-02T17:11:27Z" finished-at="2019-03-02T17:11:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLoginHome -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="testLogin" duration-ms="23508" started-at="2019-02-24T23:23:52Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.getLoginHome" finished-at="2019-02-24T23:24:15Z">
+        </test-method> <!-- testBuy -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.SuiteTestBuy@d62f43]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-03-02T17:11:28Z" finished-at="2019-03-02T17:11:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testBuyNow()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="testBuyNow" duration-ms="8232" started-at="2019-02-24T23:24:15Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testLogin" finished-at="2019-02-24T23:24:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBuyNow -->
-        <test-method status="PASS" signature="testSureOrder()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="testSureOrder" duration-ms="3109" started-at="2019-02-24T23:24:24Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testBuyNow" finished-at="2019-02-24T23:24:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSureOrder -->
-        <test-method status="PASS" signature="TestGoPay()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="TestGoPay" duration-ms="4563" started-at="2019-02-24T23:24:27Z" depends-on-methods="com.lzq.selenium.imoocTest.testCase.Login.testSureOrder" finished-at="2019-02-24T23:24:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestGoPay -->
-        <test-method status="PASS" signature="closed()[pri:0, instance:com.lzq.selenium.imoocTest.testCase.Login@12948e2]" name="closed" is-config="true" duration-ms="66" started-at="2019-02-24T23:24:31Z" finished-at="2019-02-24T23:24:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closed -->
-      </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.lzq.selenium.imoocTest.testCase.SuiteTestBuy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

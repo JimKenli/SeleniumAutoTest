@@ -1,9 +1,13 @@
 package com.lzq.selenium.imoocTest.base;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
  
@@ -72,6 +76,35 @@ public class DriverBase {
      * */
     public void close(){
     	driver.close();
+    }
+    
+    /**
+     * actionMoveElement
+     * */
+    public void action(WebElement element){
+    	Actions action =new Actions(driver);
+    	action.moveToElement(element).perform();
+    }
+    
+    /*
+     * 设置cookie
+     */
+    public void setCookie(Cookie cookie){
+    	driver.manage().addCookie(cookie);
+    	
+    }
+    /*
+     * 刷新
+     */
+    public void refresh(){
+    	driver.navigate().refresh();
+    }
+    /*
+     * 获取cookie
+     */
+    public Set<Cookie> getCookie(){
+    	Set<Cookie> cookies = driver.manage().getCookies();
+    	return cookies;
     }
 
 }

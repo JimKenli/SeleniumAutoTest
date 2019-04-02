@@ -2,6 +2,7 @@ package com.lzq.selenium.imoocTest.util;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -36,10 +37,11 @@ public class ProUtil {
 		return properties;
 	}
 	
-	public String getPro(String key) throws Exception{
+	public String getPro(String key){
 		
 		if(prop.containsKey(key)){
 			String username = prop.getProperty(key);
+			System.out.println("找到了" + key + username);
 			return username;
 		}else{
 			System.out.println("值不对" + key);
@@ -48,7 +50,23 @@ public class ProUtil {
 
 		
 	}
-	//Properties prop = new Properties();
+	
+	/**
+	 * 写入内容
+	 * */
+	public void writePro(String key,String value){
+		Properties pro = new Properties();
+			try {
+				FileOutputStream file = new FileOutputStream(filePath);
+				pro.setProperty(key, value);
+				pro.store(file, key);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+	
 	
 
 }

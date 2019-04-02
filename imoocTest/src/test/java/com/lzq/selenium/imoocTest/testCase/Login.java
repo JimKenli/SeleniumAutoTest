@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.lzq.selenium.imoocTest.base.DriverBase;
@@ -45,10 +46,11 @@ public class Login extends CaseBase{
 		}
 	}
 	
-	@Test(dependsOnMethods={"getLoginHome"})	
-	public void testLogin() throws Exception{
+	@Test(dependsOnMethods={"getLoginHome"})
+	@Parameters({"username","pass"})
+	public void testLogin(String username,String pass) throws Exception{
 		logger.debug("第一次使用log4j打印日志");
-		loginpro.login("495534487@qq.com", "2179mkw");
+		loginpro.login(username, pass);
 		Thread.sleep(3000);
 		driver.get("https://coding.imooc.com/class/203.html");
 		Thread.sleep(3000);

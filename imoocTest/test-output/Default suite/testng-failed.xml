@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lzq.selenium.imoocTest.testCase.Login">
+      <class name="com.lzq.selenium.imoocTest.testCase.SuiteTestBuy">
         <methods>
-          <include name="getLoginHome"/>
-          <include name="testLogin"/>
-          <include name="LoginTest"/>
-          <include name="testBuyNow"/>
-          <include name="closed"/>
-          <include name="TestGoPay"/>
-          <include name="testSureOrder"/>
+          <include name="testBuy"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.lzq.selenium.imoocTest.testCase.Login -->
+      </class> <!-- com.lzq.selenium.imoocTest.testCase.SuiteTestBuy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

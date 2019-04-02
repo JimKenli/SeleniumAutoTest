@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class getByLocator {
 	
-	public static By getLocator(String key) throws Exception{
+	public static By getLocator(String key) {
 		ProUtil properties = new ProUtil("element.properties");
 		String locator = properties.getPro(key);
 		String locatorType = locator.split(">")[0];

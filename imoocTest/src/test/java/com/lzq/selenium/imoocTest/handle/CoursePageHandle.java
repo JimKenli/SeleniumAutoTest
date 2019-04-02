@@ -14,7 +14,7 @@ public class CoursePageHandle {
 	/*
 	 * 点击立即购买按钮
 	 */
-	public void clickBuyNow() throws Exception{
+	public void clickBuyNow(){
 		coursePage.click(coursePage.getBuyTriggerElement());
 	}
 	/*

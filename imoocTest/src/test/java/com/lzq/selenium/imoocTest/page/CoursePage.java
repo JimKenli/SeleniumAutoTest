@@ -14,7 +14,7 @@ public class CoursePage extends BasePage{
 	/*
 	 * 获取立即购买按钮element
 	 */
-	public WebElement getBuyTriggerElement() throws Exception{
+	public WebElement getBuyTriggerElement(){
 		return element(getByLocator.getLocator("buyNow"));
 	}
 	/*

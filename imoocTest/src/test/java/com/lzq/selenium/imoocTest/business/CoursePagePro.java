@@ -55,7 +55,7 @@ public class CoursePagePro {
 	/*
 	 * 立即购买
 	 */
-	public void buyNow() throws Exception{
+	public void buyNow(){
 		coursePageHandle.clickBuyNow();
 	}
 
